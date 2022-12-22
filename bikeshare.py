@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'Chicago': 'chicago.csv',
+AVAILABLE_CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York City': 'new_york_city.csv',
               'Washington': 'washington.csv' }
 
@@ -65,7 +65,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     # load data file 
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(AVAILABLE_CITY_DATA[city])
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
@@ -84,7 +84,7 @@ def load_data(city, month, day):
 
     return df
 
-def time_stats(df):
+def get_time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -173,7 +173,7 @@ def user_stats(df):
     # TO DO: Display counts of user types
 
     user_types = df['User Type'].value_counts()
-    #print(user_types)
+
     print('User Types:\n', user_types)
 
     # TO DO: Display counts of gender
@@ -221,7 +221,7 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        time_stats(df)
+        get_time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
