@@ -1,17 +1,20 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+This code allows a user to answer the following about bikeshare:
 
-### Date created
-Include the date you created this project and README file.
 
-### Project Title
-Replace the Project Title
+-Do you want to see data for Chicago, New York, or Washington?
 
-### Description
-Describe what your project is about and what it does
+-Do you want to filter the data by month, day, or not at all?
 
-### Files used
-Include the files used
+-(If they chose a month) Which month - January, February, March, April, May, or June?
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+-(If they chose a day) Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
 
+-------------------------------------------------------------------------------------------------------------------------------
+Statistics Computed:
+
+-Popular times of travel
+-Popular stations and trip
+-Trip duration
+-User information
+-------------------------------------------------------------------------------------------------------------------------------
+Lower/Upper case is handled in the code
