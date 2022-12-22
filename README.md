@@ -10,7 +10,7 @@
 4-(If they chose a day) Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
 
 -------------------------------------------------------------------------------------------------------------------------------
-Statistics Computed:
+##Statistics Computed:
 
 1-Popular times of travel
 2-Popular stations and trip
